@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>특기자·경기실적우수자전형 면접고사 감사 주안점 안내 (10.24.)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5F6F4; --surface:#FFFFFF; --ink:#1D242B; --muted:#5E6873; --line:#DDE1DF;
+  --seal:#A8322D; --pine:#2F5D50; --pine-soft:#E3EDE9;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15191D; --surface:#1D2227; --ink:#E6E9EC; --muted:#9AA4AE; --line:#2E353C;
+    --seal:#E0736B; --pine:#7FB8A6; --pine-soft:#1F3029;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15191D; --surface:#1D2227; --ink:#E6E9EC; --muted:#9AA4AE; --line:#2E353C;
+  --seal:#E0736B; --pine:#7FB8A6; --pine-soft:#1F3029;
+}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{max-width:780px;margin:0 auto;padding:36px 20px 64px}
+.org{color:var(--muted);font-size:.92rem;margin:0}
+h1{font-size:clamp(1.55rem,4.6vw,2.1rem);line-height:1.3;margin:6px 0 14px;font-weight:700;letter-spacing:-0.02em}
+.who{display:flex;flex-wrap:wrap;gap:6px 22px;font-size:.95rem;color:var(--muted)}
+.who b{color:var(--ink);font-weight:600}
+a{color:var(--pine)}
+
+.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);
+  display:flex;gap:4px;margin:28px -20px 0;padding:10px 20px;border-bottom:1px solid var(--line)}
+.tabs button{font:inherit;font-weight:600;font-size:1rem;padding:8px 18px;border-radius:8px;border:1px solid transparent;
+  background:none;color:var(--muted);cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--surface);color:var(--ink);border-color:var(--line)}
+.tabs button:focus-visible{outline:3px solid var(--pine);outline-offset:2px}
+.tabs .time{font-weight:400;font-size:.85rem;margin-left:6px}
+
+section{margin-top:34px}
+h2{font-size:1.2rem;margin:0 0 12px;font-weight:700}
+h3{font-size:1.02rem;margin:26px 0 8px;font-weight:600}
+.facts{display:grid;grid-template-columns:max-content 1fr;gap:8px 20px;margin:0;
+  background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.facts dt{color:var(--muted);font-size:.93rem}
+.facts dd{margin:0}
+.toc{margin-top:28px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 22px}
+.toc h2{margin:0 0 8px}
+.toc ol{margin:0;padding-left:1.4em}
+.toc li{margin:4px 0}
+.toc a{color:var(--ink);text-decoration:none}
+.toc a:hover{color:var(--pine);text-decoration:underline}
+.toc .toc-sub{list-style:none;padding-left:0;margin:2px 0 0;display:flex;flex-wrap:wrap;gap:4px 18px;font-size:.9rem;color:var(--muted)}
+.facts .sub{display:grid;grid-template-columns:max-content 1fr;gap:2px 14px;margin:0}
+.facts .sub dd{margin:0}
+.tbl{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;font-size:.93rem;min-width:520px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tbody tr:last-child td{border-bottom:none}
+th{font-weight:600;color:var(--muted);font-size:.85rem;background:var(--bg)}
+td.num{font-variant-numeric:tabular-nums}
+table{word-break:keep-all}
+td[rowspan]{vertical-align:middle;text-align:center}
+.kv th[rowspan]{vertical-align:middle}
+.kv td.nw{white-space:nowrap;width:1%}
+.kv table,table.kv{min-width:0}
+th.c,td.c{text-align:center}
+tr.sum td{background:var(--bg);font-weight:600}
+.lead{font-weight:700}
+.sm{font-size:.85rem;color:var(--muted)}
+#rooms th,#rooms td{white-space:nowrap}
+#rooms td.ivs{white-space:normal;min-width:8em}
+#rooms th,#rooms td{padding-left:9px;padding-right:9px}
+.kv th[scope=row]{background:var(--bg);color:var(--muted);font-weight:600;white-space:nowrap;width:1%}
+.kv td.k2{color:var(--muted);white-space:nowrap;width:1%}
+.note{font-size:.88rem;color:var(--muted);margin:8px 2px 0}
+
+.flow{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px;align-items:stretch}
+.flow li{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 14px;min-width:120px}
+.flow b{display:block;font-weight:600}
+.flow span{font-size:.88rem;color:var(--muted)}
+.flow .arrow{background:none;border:none;min-width:0;padding:10px 2px;color:var(--muted);align-self:center;font-size:.85rem}
+
+.stage{margin-top:28px;padding-top:22px;border-top:2px solid var(--ink)}
+.stage h3{margin:0 0 4px;font-size:1.08rem;display:flex;gap:10px;align-items:baseline}
+.stage h3 span{color:var(--seal);font-variant-numeric:tabular-nums}
+.stage h4{margin:18px 0 6px;font-size:.98rem;font-weight:600}
+.stage ul{margin:0;padding-left:1.1em}
+.stage li{margin:4px 0;padding-left:2px}
+.stage li::marker{color:var(--muted)}
+.aside{font-size:.9rem;color:var(--muted);list-style:none;margin-left:-1.1em}
+
+.contact{margin-top:40px;padding:16px 20px;background:var(--pine-soft);border-radius:12px}
+.contact b{display:block;margin-bottom:2px}
+[hidden]{display:none!important}
+.printbar{margin-top:28px;display:flex;justify-content:center}
+.printbar button{font:inherit;font-weight:600;font-size:1rem;padding:12px 28px;border-radius:10px;
+  border:1px solid var(--ink);background:var(--ink);color:var(--bg);cursor:pointer}
+.printbar button:focus-visible{outline:3px solid var(--pine);outline-offset:3px}
+@media print{
+  @page{size:A4;margin:14mm 12mm}
+  :root{--bg:#fff;--surface:#fff;--ink:#000;--muted:#444;--line:#bbb;--seal:#000;--pine:#000;--pine-soft:#fff;padding:0}
+  body{font-size:10.5pt;line-height:1.55}
+  .wrap{max-width:none;padding:0}
+  .tabs,.printbar{display:none!important}
+  [role="tabpanel"][hidden]{display:block!important}
+  [role="tabpanel"]+[role="tabpanel"]{break-before:page}
+  .print-title{display:block!important;font-size:14pt;font-weight:700;margin:0 0 6px;padding-bottom:4px;border-bottom:2px solid #000}
+  section{margin-top:18px}
+  .tbl{overflow:visible;border-radius:0}
+  table{min-width:0}
+  tr,.stage h4,.flow li{break-inside:avoid}
+  h2,h3,h4{break-after:avoid}
+  a{color:#000;text-decoration:none}
+  .contact{border:1px solid #000;border-radius:0}
+  .flow li{border-color:#000}
+  .toc,.tbl,.facts,.contact{-webkit-box-decoration-break:clone;box-decoration-break:clone;break-inside:auto}
+  thead{display:table-header-group}
+}
+.print-title{display:none}
+
+@media (max-width:560px){
+  .wrap{padding:28px 16px 56px}
+  .tabs{margin:24px -16px 0;padding:10px 16px}
+  .tabs button{padding:8px 12px}
+  .facts{grid-template-columns:1fr;gap:2px}
+  .facts dd{margin-bottom:8px}
+  .facts .sub dd{margin-bottom:2px}
+  .flow .arrow{display:none}
+  .kv th,.kv td{padding:8px 8px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="org">2027학년도 대학입학전형 공정관리대책위원회</p>
+  <h1>특기자·경기실적우수자전형 면접고사 감사 주안점 안내</h1>
+  <div class="who">
+    <div>고사일 <b>2026. 10. 24.(토)</b></div>
+    <div>담당 위원 <b>신상용</b></div>
+    <div>전형본부 <b>입학관리팀</b> <a href="tel:0522591971">052-259-1971</a></div>
+  </div>
+
+  <div>
+    <nav class="toc" aria-label="목차">
+      <h2>목차</h2>
+      <ol>
+        <li><a href="#overview">고사 개요</a></li>
+        <li><a href="#rooms">고사장 및 감독관</a></li>
+        <li><a href="#events">종목별 모집인원 및 면접 대상자</a></li>
+        <li><a href="#score">전형요소 및 배점기준</a></li>
+        <li><a href="#flow">면접 진행 흐름</a></li>
+        <li><a href="#audit">감사 활동 시 주안점</a>
+          <ol class="toc-sub"><li>면접고사 시작 전</li><li>면접고사 진행</li><li>면접고사 종료 및 채점</li></ol>
+        </li>
+      </ol>
+    </nav>
+
+    <section id="overview">
+      <h2>1. 고사 개요</h2>
+      <div class="tbl"><table class="kv">
+        <tbody>
+          <tr><th scope="row">고사명</th><td colspan="3">2027학년도 수시모집 특기자/경기실적우수자전형 면접고사 (스포츠과학부)</td></tr>
+          <tr><th scope="row">고사 일시</th><td colspan="3">2026. 10. 24.(토) 09:30~</td></tr>
+          <tr><th scope="row">수험생 집결</th><td colspan="3">09:00까지 지정 대기장 (수험표 참고)</td></tr>
+          <tr><th scope="row" rowspan="3">모집인원 및<br>면접 대상자</th><td class="k2">특기자</td><td colspan="2">모집인원 13명, 면접 대상자 58명</td></tr>
+          <tr><td class="k2">경기실적우수자</td><td colspan="2">모집인원 19명, 면접 대상자 28명</td></tr>
+          <tr class="sum"><td class="k2">합계</td><td colspan="2">모집인원 32명, 면접 대상자 86명</td></tr>
+          <tr><th scope="row">면접 방식</th><td colspan="3">면접관 3명, 1인 5분 (5분 간격으로 1명씩 입실)</td></tr>
+          <tr><th scope="row" rowspan="3">출근 시간</th><td class="k2">감독관</td><td class="nw">08:30</td><td>고사본부(본관 1층 입학관리팀)</td></tr>
+          <tr><td class="k2">진행요원</td><td class="nw">08:30</td><td>고사장</td></tr>
+          <tr><td class="k2">면접관</td><td class="nw">08:50</td><td>면접장</td></tr>
+          <tr><th scope="row" rowspan="3">채점</th><td class="k2">방법</td><td colspan="2">채점용 노트북에 직접 입력 (자동 저장)</td></tr>
+          <tr><td class="k2">로그인</td><td colspan="2">내부위원 UWIN ID/PW, 외부위원 별도 배부(로그인 정보 카드)</td></tr>
+          <tr><td class="k2">확정</td><td colspan="2">결시 비교 대조 후 최종확정 버튼</td></tr>
+          <tr><th scope="row">서류 제출</th><td colspan="3">고사본부(본관 1층 입학관리팀)</td></tr>
+          <tr><th scope="row" rowspan="2">기타</th><td class="k2">학부모</td><td colspan="2">별도 대기장소 미운영</td></tr>
+          <tr><td class="k2">주차</td><td colspan="2">8호관 입구에서 수험표 제시 후 1인 1장 (무료 5시간)</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <section id="rooms">
+      <h2>2. 고사장 및 감독관</h2>
+      <div class="tbl"><table>
+        <thead><tr><th>고사장(전형)</th><th class="c">대기장</th><th>감독관</th><th class="c">면접장</th><th>면접관</th><th class="c">모집<br>인원</th><th class="c">면접<br>대상자</th></tr></thead>
+        <tbody>
+          <tr><td>제1고사장<br><span class="sm">특기자</span></td><td class="c">8호관<br>108호</td><td>강성모 <a href="tel:01046928625">010-4692-8625</a><br>박선준 <a href="tel:01038739692">010-3873-9692</a></td><td class="c">8호관<br>105호</td><td class="ivs"><span class="lead">김종호</span>, 류광선, 장승현</td><td class="num c">8명</td><td class="num c">30명</td></tr>
+          <tr><td>제2고사장<br><span class="sm">특기자</span></td><td class="c">8호관<br>101호</td><td>김현아 <a href="tel:01032382875">010-3238-2875</a><br>윤상훈 <a href="tel:01025629580">010-2562-9580</a></td><td class="c">8호관<br>201-2호</td><td class="ivs"><span class="lead">우민정</span>, 김유라, 이규일</td><td class="num c">5명</td><td class="num c">28명</td></tr>
+          <tr><td>제3고사장<br><span class="sm">경기실적우수자</span></td><td class="c">8호관<br>426호</td><td>마재경 <a href="tel:01050906889">010-5090-6889</a><br>정민수 <a href="tel:01097604056">010-9760-4056</a></td><td class="c">8호관<br>423-1호</td><td class="ivs"><span class="lead">이한준</span>, 이하나, 서재철</td><td class="num c">19명</td><td class="num c">28명</td></tr>
+          <tr class="sum"><td colspan="5">합계</td><td class="num c">32명</td><td class="num c">86명</td></tr>
+        </tbody>
+      </table></div>
+      <p class="note">굵은 글씨는 책임 면접관(스포츠과학부 소속)입니다. 면접 대상자는 해당 고사장에서 면접을 보는 수험생 수입니다.</p>
+    </section>
+
+    <section id="events">
+      <h2>3. 종목별 모집인원 및 면접 대상자</h2>
+      <div class="tbl"><table>
+        <thead><tr><th class="c">고사장</th><th colspan="2">종목(포지션)</th><th class="c">모집인원</th><th class="c">면접 대상자</th></tr></thead>
+        <tbody>
+          <tr><td rowspan="5">제1고사장</td><td colspan="2">테니스(남)</td><td class="num c">1</td><td class="num c">1</td></tr>
+          <tr><td colspan="2">씨름(남)</td><td class="num c">2</td><td class="num c">2</td></tr>
+          <tr><td rowspan="2">축구(남)</td><td class="c">GK</td><td class="num c">1</td><td class="num c">6</td></tr>
+          <tr><td class="c">DF</td><td class="num c">4</td><td class="num c">21</td></tr>
+          <tr class="sum"><td colspan="2">소계</td><td class="num c">8</td><td class="num c">30</td></tr>
+          <tr><td rowspan="3">제2고사장</td><td rowspan="2">축구(남)</td><td class="c">MF</td><td class="num c">2</td><td class="num c">11</td></tr>
+          <tr><td class="c">FW</td><td class="num c">3</td><td class="num c">17</td></tr>
+          <tr class="sum"><td colspan="2">소계</td><td class="num c">5</td><td class="num c">28</td></tr>
+          <tr><td rowspan="13">제3고사장</td><td rowspan="3">농구(남)</td><td class="c">센터</td><td class="num c">2</td><td class="num c">3</td></tr>
+          <tr><td class="c">포워드</td><td class="num c">2</td><td class="num c">4</td></tr>
+          <tr><td class="c">가드</td><td class="num c">1</td><td class="num c">1</td></tr>
+          <tr><td rowspan="3">농구(여)</td><td class="c">센터</td><td class="num c">2</td><td class="num c">3</td></tr>
+          <tr><td class="c">포워드</td><td class="num c">1</td><td class="num c">3</td></tr>
+          <tr><td class="c">가드</td><td class="num c">1</td><td class="num c">3</td></tr>
+          <tr><td colspan="2">복싱(남, 60kg 이하)</td><td class="num c">1</td><td class="num c">1</td></tr>
+          <tr><td colspan="2">복싱(남, 75kg 이하)</td><td class="num c">1</td><td class="num c">1</td></tr>
+          <tr><td colspan="2">펜싱(남, 플뢰레)</td><td class="num c">2</td><td class="num c">2</td></tr>
+          <tr><td colspan="2">양궁(남)</td><td class="num c">2</td><td class="num c">2</td></tr>
+          <tr><td colspan="2">볼링(남)</td><td class="num c">2</td><td class="num c">1</td></tr>
+          <tr><td colspan="2">수영(경영)</td><td class="num c">2</td><td class="num c">4</td></tr>
+          <tr class="sum"><td colspan="2">소계</td><td class="num c">19</td><td class="num c">28</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <section id="score">
+      <h2>4. 전형요소 및 배점기준</h2>
+      <div class="tbl"><table>
+        <thead><tr><th>전형</th><th class="c">경기/수상 실적</th><th class="c">학생부</th><th class="c">면접</th></tr></thead>
+        <tbody>
+          <tr><td>특기자(스포츠과학부)</td><td class="num c">70%</td><td class="num c">20%</td><td class="num c">10%</td></tr>
+          <tr><td>경기실적우수자(스포츠과학부)</td><td class="num c">60%</td><td class="num c">20%</td><td class="num c">20%</td></tr>
+        </tbody>
+      </table></div>
+      <div class="tbl" style="margin-top:12px"><table>
+        <thead><tr><th>평가영역</th><th class="c">특기자(스포츠)</th><th class="c">경기실적우수자</th></tr></thead>
+        <tbody>
+          <tr><td>인성 및 가치관</td><td class="num c">10 ~ 0</td><td class="num c">20 ~ 0</td></tr>
+          <tr><td>사고력 및 의사소통 능력</td><td class="num c">10 ~ 0</td><td class="num c">20 ~ 0</td></tr>
+          <tr><td>전공적합성</td><td class="num c">35 ~ 0</td><td class="num c">40 ~ 0</td></tr>
+          <tr class="sum"><td>채점표 만점</td><td class="num c">55점</td><td class="num c">80점</td></tr>
+          <tr><td>최저점수(자동 합산)</td><td class="num c">45점</td><td class="num c">120점</td></tr>
+          <tr class="sum"><td>최종 만점</td><td class="num c">100점</td><td class="num c">200점</td></tr>
+        </tbody>
+      </table></div>
+      <p class="note">채점표 기준으로 정수 점수를 입력하면 최저점수가 자동으로 반영됩니다.</p>
+    </section>
+
+    <section id="flow">
+      <h2>5. 면접 진행 흐름</h2>
+      <ol class="flow">
+        <li><b>감독관 물품 수령</b><span>08:30 고사본부</span></li>
+        <li class="arrow" aria-hidden="true">→</li>
+        <li><b>면접관 물품 인수</b><span>08:50 면접장</span></li>
+        <li class="arrow" aria-hidden="true">→</li>
+        <li><b>수험생 집결·본인확인</b><span>09:00 대기장</span></li>
+        <li class="arrow" aria-hidden="true">→</li>
+        <li><b>고지사항 안내</b><span>전자기기 봉투 보관</span></li>
+        <li class="arrow" aria-hidden="true">→</li>
+        <li><b>면접 시작</b><span>09:30 · 5분 간격 1명씩</span></li>
+        <li class="arrow" aria-hidden="true">→</li>
+        <li><b>면접 종료 후 퇴실</b><span>건물 밖으로</span></li>
+        <li class="arrow" aria-hidden="true">→</li>
+        <li><b>응시여부 대조</b><span>결과보고서 작성·서명</span></li>
+        <li class="arrow" aria-hidden="true">→</li>
+        <li><b>최종확정·물품 제출</b><span>고사본부</span></li>
+      </ol>
+    </section>
+
+    <section id="audit">
+      <h2>6. 감사 활동 시 주안점</h2>
+
+      <div class="stage">
+        <h3><span>1</span>면접고사 시작 전</h3>
+        <h4>고사 운영 준비</h4>
+        <ul>
+          <li>감독관이 08:30까지 고사본부(본관 1층 입학관리팀)에 출근하여 고사물품을 수령하는지</li>
+          <li>면접관이 08:50까지 면접장에 도착하여 감독관으로부터 [면접고사대장], 채점용 노트북, 면접관 유의사항, 필기구, 표찰을 인수하는지</li>
+          <li>진행요원이 전일 고사장(면접장, 대기장) 좌석배치를 마치고, 당일 08:30까지 출근하여 시설물 개방 및 대기장 입실 안내를 하는지</li>
+          <li>책임 면접관(스포츠과학부 소속, 기선임)이 [면접고사대장]을 작성하고, 응시여부를 면접관 상호 간에 확인하도록 안내되는지</li>
+        </ul>
+        <h4>수험생 집결 및 본인확인</h4>
+        <ul>
+          <li>수험생이 09:00까지 지정 대기장(8호관 108호, 101호, 426호)에 집결하는지</li>
+          <li>[면접고사 보조대장]의 이름, 생년월일과 신분증 정보를 비교 대조하여 본인확인 및 보조대장 작성이 이루어지는지</li>
+          <li>학부모 대기장소를 별도로 운영하지 않는 원칙이 지켜지는지</li>
+        </ul>
+        <h4>전자기기 및 외부 접촉 통제</h4>
+        <ul>
+          <li>수험생의 외부 인원 접촉이 통제되는지</li>
+          <li>휴대폰 등 전자기기의 전원을 끈 후 보관봉투에 넣어 수험생 본인이 보관하는지</li>
+          <li>참고자료(교과서 등)는 허용하되, 전자기기에 저장된 참고자료 열람은 제한되는지</li>
+          <li>결시자 불합격, 전자기기 사용 시 부정행위 처리, 대기장 이탈·대화 금지, 면접 방식(면접관 3명, 5분 내외) 등 고지사항이 수험생에게 동일하게 안내되는지</li>
+          <li>면접장 입실 시 수험번호와 지원종목만 말하고, 이름 및 출신학교 언급은 금지됨을 사전에 안내하는지</li>
+        </ul>
+      </div>
+
+      <div class="stage">
+        <h3><span>2</span>면접고사 진행</h3>
+        <h4>면접장 입실 및 신원정보 차단</h4>
+        <ul>
+          <li>09:30부터 5분 간격으로 진행요원이 수험생을 1명씩 순번에 따라 인솔하는지</li>
+          <li>이동 중 수험생의 외부 접촉이 통제되고, 개인물품을 모두 챙겨 이동하는지</li>
+          <li>면접관이 채점용 노트북의 사진과 수험생 얼굴을 대조하고, 수험번호와 종목을 큰 소리로 말하게 하여 본인확인을 하는지</li>
+          <li>수험생이 이름이나 출신학교를 언급하지 않도록 통제되는지</li>
+          <li>화장실 이용 시 진행요원이 인솔하는지</li>
+        </ul>
+        <h4>면접 시간 및 진행의 공정성</h4>
+        <ul>
+          <li>수험생 1인당 면접 시간 5분이 모든 수험생에게 동일하게 지켜지는지</li>
+          <li>면접관 3명이 공정하고 객관적인 태도로 수험생을 친절하게 대하는지</li>
+          <li>면접 종료 후 수험생이 바로 고사장 건물 밖으로 퇴실하여 대기 수험생과 접촉하지 않는지</li>
+        </ul>
+        <h4>결시·지각·중도포기 처리</h4>
+        <ul>
+          <li>결시자는 [면접고사대장]과 모든 면접관의 채점용 노트북에 결시 체크를 하는지</li>
+          <li>당일 첫 번째 학생의 면접이 완료된 이후 도착한 수험생을 지각자로 분류하고, 지각사실 확인(체크) 후 건물 밖으로 퇴실 조치하는지</li>
+          <li>지각자·중도포기자는 채점용 노트북에 0점을 입력하고, [면접고사대장]에 지각 또는 중도포기로 표기하는지</li>
+          <li>면접 진행 중 응시여부(참석, 결시, 지각, 중도포기)에 대해 면접관과 감독관 간 상이함이 없는지</li>
+          <li>진행 중 발생 상황은 일차적으로 면접관과 감독관이 협의하여 처리하고, 필요 시 고사본부(052-259-1971)에 즉시 통보하는지</li>
+        </ul>
+      </div>
+
+      <div class="stage">
+        <h3><span>3</span>면접고사 종료 및 채점</h3>
+        <h4>채점기준 및 점수처리</h4>
+        <ul>
+          <li>평가영역별 배점기준 범위 내에서 정수로 점수를 부여하는지</li>
+          <li class="aside">특기자(스포츠): 인성 및 가치관 10~0, 사고력 및 의사소통 능력 10~0, 전공적합성 35~0 (55점 만점, 최저점수 45점 자동 합산 → 100점 만점)</li>
+          <li class="aside">경기실적우수자: 인성 및 가치관 20~0, 사고력 및 의사소통 능력 20~0, 전공적합성 40~0 (80점 만점, 최저점수 120점 자동 합산 → 200점 만점)</li>
+          <li>면접관이 채점용 노트북에 직접 점수를 기입하고, 자동 저장되는지</li>
+          <li>면접관 3명이 각자 독립적으로 채점하는지</li>
+        </ul>
+        <h4>응시여부 대조 및 최종확정</h4>
+        <ul>
+          <li>[면접고사 보조대장]의 응시여부와 책임 면접관이 작성한 [면접고사대장]을 비교 대조하는지</li>
+          <li>[면접고사 실시결과 보고서]를 작성하고 면접관이 서명하는지</li>
+          <li>결과보고서의 결시와 채점용 노트북의 결시를 비교 대조한 후 최종확정 버튼을 누르는지</li>
+        </ul>
+        <h4>서류 및 물품 제출</h4>
+        <ul>
+          <li>면접관이 모든 고사물품을 감독관에게 인계하는지</li>
+          <li>면접고사 관련 서류 및 물품 일체가 고사본부(본관 1층 입학관리팀)에 제출되는지</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <div class="contact">
+    <b>전형본부(입학관리팀) 문의처</b>
+    사무실 <a href="tel:0522591971">052-259-1971</a><br>
+    권영은 <a href="tel:01029762978">010-2976-2978</a>
+  </div>
+
+  <div class="printbar"><button type="button" onclick="window.print()">인쇄하기</button></div>
+</div>
+</body>
+</html>
